@@ -1,7 +1,7 @@
-import './topbar/topbar.css'
+import './topbar.css'
 import './App.css'
 
-export default function TopBar({ setPage }) {
+export default function Nav({ setPage }) {
   return (
     <div class="topnav">
       <div onClick={() => setPage('parks')}>Parks</div>

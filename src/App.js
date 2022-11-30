@@ -1,5 +1,5 @@
 import Home from './pages/Home'
-import TopBar from './Nav'
+import Nav from './Nav'
 import { useState } from 'react'
 import Parks from './pages/Parks'
 import Events from './pages/Events'
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div>
-      <TopBar setPage={setPage} />
+      <Nav setPage={setPage} />
       <pages />
       <h1>{page}</h1>
       {page === 'Home' ? (
