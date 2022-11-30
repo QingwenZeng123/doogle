@@ -1,4 +1,5 @@
-import './topbar.css'
+import './topbar/topbar.css'
+import './App.css'
 
 export default function TopBar({ setPage }) {
   return (
