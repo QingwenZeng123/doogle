@@ -1,15 +1,18 @@
-import "./topbar.css";
+import './topbar.css'
 
-export default function TopBar() {
+export default function TopBar({ setPage }) {
   return (
-    <div className="topbar">
-      <div className="home">Home</div>
-      <div className="play">Play</div>
-      <div className="services">Services</div>
-      <div className="local__breeders">Breeders</div>
-      <div className="contact__us">Contact Us</div>
-      <div className="sign__in">Sign In</div>
-      <div className="sign__up">Sign Up</div>
+    <div class="topnav">
+      <div onClick={() => setPage('parks')}>Parks</div>
+      <div onClick={() => setPage('entertainment')}>Entertainment</div>
+      <div onClick={() => setPage('events')}>Events</div>
+      <div onClick={() => setPage('contact')}>Services</div>
+      <div onClick={() => setPage('about')}>Breeders</div>
+      <div onClick={() => setPage('contact')}>Contact</div>
+      <div onClick={() => setPage('signin')}>Sign In</div>
+      <div onClick={() => setPage('signup')}>Sign up</div>
     </div>
-  );
+  )
 }
+
+//      /*park, local breeder in services*/
