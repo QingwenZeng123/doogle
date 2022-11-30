@@ -1,11 +1,14 @@
 import Home from "./pages/home/Home";
-import TopBar from "./topbar/TopBar";
+import TopBar from "./TopBar";
 
 function App() {
   return (
     <>
-      <TopBar/>
-      <Home />
+      <Nav/>
+      <Header/>
+      <pages/>
+      <Footer/>
+      
     </>
   )
 }
