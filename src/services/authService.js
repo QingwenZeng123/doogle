@@ -1,3 +1,5 @@
+/* not up to date */
+
 import { useState, useEffect } from "react";
 import { signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 import { auth } from "../firebaseConfig";
