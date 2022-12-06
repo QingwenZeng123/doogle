@@ -6,6 +6,7 @@ import Events from "./pages/Events";
 import Breeders from "./pages/Breeders";
 import Footer from "./Footer";
 import Header from "./Header";
+// import { SignIn, SignOut, useAuthentication } from "../services/authService";
 
 function App() {
   const [page, setPage] = useState("Home");
