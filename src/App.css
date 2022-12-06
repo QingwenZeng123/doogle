@@ -25,13 +25,26 @@
 }
 
 /* Header*/
-.header-container {
+.Header-outline {
   background-image: url("background.webp");
-  background-size: contain;
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   height: 45vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  background-image: url("background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 45vh;
+  position: relative;
+  width: 60%;
 }
 
 .App-header {
