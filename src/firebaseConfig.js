@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -9,17 +8,15 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBwhKSzQjKM1jWNeEMVKptyci4Gi5erD4s",
-  authDomain: "doggle-97a0c.firebaseapp.com",
-  projectId: "doggle-97a0c",
-  storageBucket: "doggle-97a0c.appspot.com",
-  messagingSenderId: "246482248516",
-  appId: "1:246482248516:web:3dfbef9909968f2cb9ed11",
-  measurementId: "G-R5ZPFY4J0H",
+  apiKey: "AIzaSyA8Zz8Yp7xjzoecX4whou5JrgO6bYP8FJU",
+  authDomain: "doogle-bf5d0.firebaseapp.com",
+  projectId: "doogle-bf5d0",
+  storageBucket: "doogle-bf5d0.appspot.com",
+  messagingSenderId: "539355114641",
+  appId: "1:539355114641:web:780c9cdc830f4f92f5e330",
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-export const analytics = getAnalytics(app);
