@@ -34,6 +34,13 @@
   position: relative;
 }
 
+/* User Header Image */
+header img {
+  height: 30px;
+  border-radius: 10%;
+  vertical-align: -5px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

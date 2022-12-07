@@ -1,5 +1,3 @@
-/* not up to date */
-
 import { useState, useEffect } from "react";
 import { signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 import { auth } from "../firebaseConfig";
@@ -16,6 +14,7 @@ export function SignOut() {
   return (
     <div>
       Hello, {auth.currentUser.displayName} &nbsp;
+      <img alt="logo" src={auth.currentUser.photoURL} /> &nbsp;
       <button onClick={() => signOut(auth)}>Sign Out</button>
     </div>
   );
