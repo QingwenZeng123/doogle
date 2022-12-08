@@ -4,6 +4,7 @@ import "./App.css";
 export default function Nav({ setPage }) {
   return (
     <div class="topnav">
+      <divA>Doggle</divA>
       <div onClick={() => setPage("Home")}>Home</div>
       <div onClick={() => setPage("parks")}>Parks</div>
       <div onClick={() => setPage("entertainment")}>Entertainment</div>

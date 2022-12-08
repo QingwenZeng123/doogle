@@ -142,3 +142,18 @@ ul {
   flex-direction: column;
   padding-inline-start: 0;
 }
+
+.Events, .EventsLearn{
+  /* style */
+  border: solid;
+  border-width: thick;
+  display: flex;
+  float: left;
+}
+
+.Services, .Parks {
+  border: solid;
+  border-width: thick;
+  display: flex;
+  float: right;
+}
