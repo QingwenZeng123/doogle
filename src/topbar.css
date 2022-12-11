@@ -4,8 +4,7 @@
 }
 
 /* Style the links inside the navigation bar */
-.topnav div {
-  float: left;
+.topnav div, .topnav divA {
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -19,17 +18,10 @@
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
+.topnav div {
+  float: right;
 }
 
-.topnav b {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.topnav divA {
+  float: left;
 }
