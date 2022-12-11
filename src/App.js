@@ -16,7 +16,6 @@ function App() {
       <div className="Page-container">
         <Nav setPage={setPage} />
         <Header headname={page} />
-        <pages />
         <h1>{page}</h1>
         {page === "Home" ? (
           <Home />

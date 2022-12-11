@@ -3,11 +3,14 @@ import HeaderList from "./HeaderList";
 
 function Header(props) {
   const headname = props.headname;
-  const headers = HeaderList.map((headerList) => (
-    <HeaderList key={headerList.name} headerList={headerList} />
-  ));
+  console.log(headname);
+  // const headers = HeaderList.map((headerList) => (
+  //   <HeaderList key={headerList.name} headerList={headerList} />
+  // ));
 
-  if (headname === "Home") {
+  return <div>{HeaderList[headname].img}</div>;
+
+  /* if (headname === "Home") {
     return HeaderList.slice(0, 1).map((headerList) => (
       <div key={headerList.id}>{headerList.img}</div>
     ));
@@ -31,7 +34,7 @@ function Header(props) {
     return HeaderList.slice(0, 1).map((headerList) => (
       <div key={headerList.id}>{headerList.img}</div>
     ));
-  }
+  } */
 }
 
 export default Header;
