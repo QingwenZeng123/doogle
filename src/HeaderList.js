@@ -1,56 +1,37 @@
 import React from "react";
 import HomeBG from "./background/HomeBG.webp";
-import contactBG from "./background/contactBG.webp";
-import eventBG from "./background/eventsBG.webp";
-import breederBG from "./background/breederBG.jpg";
-import parksBG from "./background/parksBG.jpg";
+import ContactBG from "./background/ContactBG.webp";
+import EventsBG from "./background/EventsBG.webp";
+import ServicesBG from "./background/ServicesBG.jpg";
+import ParksBG from "./background/ParksBG.jpg";
+import Feedback from "./pages/Feedback.js";
 
 const HeaderList = {
   Home: {
     name: "Home",
-    img: <img src={HomeBG} width="100" alt="HomeBG" />,
+    img: <img className="Background-style" src={HomeBG} alt="HomeBG" />,
+    title: <h1>Home</h1>,
   },
-  contact: {
-    name: "contact",
-    img: <img src={contactBG} alt="contactBG" width="100" />,
+  Contact: {
+    name: "Contact",
+    img: <img className="Background-style" src={ContactBG} alt="ContactBG" />,
+    title: <h1>Contact</h1>,
   },
-  events: {
-    name: "events",
-    img: <img src={eventBG} alt="eventBG" width="100" />,
+  Events: {
+    name: "Events",
+    img: <img className="Background-style" src={EventsBG} alt="EventsBG" />,
+    title: <h1>Events</h1>,
   },
-  breeders: {
-    name: "breeders",
-    img: <img src={breederBG} alt="breederBG" width="100" />,
+  Services: {
+    name: "Services",
+    img: <img className="Background-style" src={ServicesBG} alt="ServicesBG" />,
+    title: <h1>Services</h1>,
   },
-  parks: {
-    name: "parks",
-    img: <img src={parksBG} alt="parksBG" width="100" />,
+  Parks: {
+    name: "Parks",
+    img: <img className="Background-style" src={ParksBG} alt="ParksBG" />,
+    title: <h1>Parks</h1>,
   },
 };
-/* {
-    id: 0,
-    name: "Home",
-    img: <img src={HomeBG} alt="HomeBG" />,
-  },
-  {
-    id: 1,
-    name: "contact",
-    img: <img src={contactBG} alt="contactBG" />,
-  },
-  {
-    id: 2,
-    name: "events",
-    img: <img src={eventBG} alt="eventBG" />,
-  },
-  {
-    id: 3,
-    name: "breederBG",
-    img: <img src={breederBG} alt="breederBG" />,
-  },
-  {
-    id: 4,
-    name: "parksBG",
-    img: <img src={parksBG} alt="parksBG" />,
-  }, */
 
 export default HeaderList;

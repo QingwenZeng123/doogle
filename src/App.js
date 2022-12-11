@@ -3,7 +3,8 @@ import Nav from "./Nav";
 import { useState } from "react";
 import Parks from "./pages/Parks";
 import Events from "./pages/Events";
-import Breeders from "./pages/Breeders";
+import Contact from "./pages/Contact";
+import Services from "./pages/Services";
 import Footer from "./Footer";
 import Header from "./Header";
 // import { SignIn, SignOut, useAuthentication } from "../services/authService";
@@ -16,15 +17,17 @@ function App() {
       <div className="Page-container">
         <Nav setPage={setPage} />
         <Header headname={page} />
-        <h1>{page}</h1>
+        {/* <h1>{page}</h1> */}
         {page === "Home" ? (
           <Home />
-        ) : page === "parks" ? (
+        ) : page === "Parks" ? (
           <Parks />
         ) : page === "Events" ? (
           <Events />
-        ) : page === "Breeders" ? (
-          <Breeders />
+        ) : page === "Services" ? (
+          <Services />
+        ) : page === "Contact" ? (
+          <Contact />
         ) : (
           <Home />
         )}
