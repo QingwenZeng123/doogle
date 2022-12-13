@@ -19,17 +19,17 @@ function App() {
         <Header headname={page} />
         {/* <h1>{page}</h1> */}
         {page === "Home" ? (
-          <Home />
+          <Home setPage={setPage}/>
         ) : page === "Parks" ? (
           <Parks />
         ) : page === "Events" ? (
-          <Events />
+          <Events/>
         ) : page === "Services" ? (
           <Services />
         ) : page === "Contact" ? (
           <Contact />
         ) : (
-          <Home />
+          <Home setPage={setPage}/>
         )}
       </div>
       <Footer />
