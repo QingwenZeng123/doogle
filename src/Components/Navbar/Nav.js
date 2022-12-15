@@ -1,5 +1,5 @@
 import "./topbar.css";
-import "./App.css";
+// import ".../App.css";
 
 export default function Nav({ setPage }) {
   return (
@@ -14,4 +14,4 @@ export default function Nav({ setPage }) {
   );
 }
 
-  /*park, local breeder in services*/
+/*park, local breeder in services*/

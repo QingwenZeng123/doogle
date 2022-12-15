@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
-import Nav from "./Nav";
+import Nav from "./Navbar/Nav";
 import { useState } from "react";
-import Parks from "./pages/Parks";
+import Parks from "./pages/ParksPlaceholder/Parks";
 import Events from "./pages/Events";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";

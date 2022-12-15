@@ -8,16 +8,16 @@
   font-family: sans-serif;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .Page-container {
   flex: 1;
@@ -97,6 +97,7 @@
   text-decoration: none;
   font-size: 17px;
 }
+
 /* Style the links inside the navigation bar */
 .secondnav a {
   float: right;
