@@ -29,7 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("repeatedBG.jpg");
+  background-image: url("./background/repeatedBG.jpg");
   background-size: contain;
   background-repeat: repeat;
   opacity: 0.6;
@@ -187,7 +187,7 @@ ul {
   /*background-color: lightcoral;*/
   height: 20%;
   width: 50%;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .Header {
@@ -207,4 +207,3 @@ ul {
   align-self: center;
   height: 400px;
 }
-

@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Footer from "./Footer";
 import Header from "./Header";
-// import { SignIn, SignOut, useAuthentication } from "../services/authService";
+// import { SignIn, SignOut, useAuthentication } from "./services/authService";
 
 function App() {
   const [page, setPage] = useState("Home");
@@ -19,17 +19,17 @@ function App() {
         <Header headname={page} />
         {/* <h1>{page}</h1> */}
         {page === "Home" ? (
-          <Home setPage={setPage}/>
+          <Home setPage={setPage} />
         ) : page === "Parks" ? (
           <Parks />
         ) : page === "Events" ? (
-          <Events/>
+          <Events />
         ) : page === "Services" ? (
           <Services />
         ) : page === "Contact" ? (
           <Contact />
         ) : (
-          <Home setPage={setPage}/>
+          <Home setPage={setPage} />
         )}
       </div>
       <Footer />

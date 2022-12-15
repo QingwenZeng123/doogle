@@ -20,14 +20,14 @@ const Footer = () => {
             <ul className="list-styled">
               <li>111-111-1111</li>
               <li>feedbackdoogle@gmail.com</li>
-              <li>webLink</li>
+              <li>webLink *TBD*</li>
             </ul>
           </div>
 
           <div className="col">
             <h4>Media</h4>
             <ul className="list-styled">
-              <li>Ins</li>
+              <li>Instagram</li>
               <li>Twitter</li>
               <li>Facebook</li>
             </ul>
