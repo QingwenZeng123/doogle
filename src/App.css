@@ -1,10 +1,11 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  font-family: sans-serif;
 }
 
 .App-logo {
@@ -24,7 +25,7 @@
   flex-direction: column;
 }
 
-/*Header*/
+/* ===================== Header ===================== */
 .header-container {
   display: flex;
   justify-content: center;
@@ -128,7 +129,61 @@
   align-items: center;
 }
 
-/* Footer */
+/* ===================== Contact Page ===================== */
+.contact-container {
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #999;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  row-gap: 20px;
+}
+
+form p {
+  margin-top: -20px;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  row-gap: 10px;
+}
+
+.input-field {
+  width: 450px;
+  height: 40px;
+  border: 1px solif #777;
+  outline: none;
+}
+
+.textarea-field {
+  height: 150px;
+  padding-top: 10px;
+}
+
+.submit {
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 18px;
+  padding: 10px;
+  background-color: #47c35a;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+/* ===================== Footer ===================== */
 .main-footer {
   color: white;
   background-color: #282c34;
