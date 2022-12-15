@@ -187,9 +187,17 @@ ul {
   /*background-color: lightcoral;*/
   height: 20%;
   width: 50%;
-  flex-grow: 1;
+  flex-grow: 1; 
 }
 
+.Header {
+  border-bottom: solid;
+  height: 30%;
+  font-family: "serif";
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 .home {
   display: flex;
   flex-direction: column;
@@ -199,3 +207,4 @@ ul {
   align-self: center;
   height: 400px;
 }
+

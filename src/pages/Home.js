@@ -1,4 +1,5 @@
 import React from 'react'
+import './Home.css'
 
 export default function Home(props) {
   console.log(props);
@@ -6,33 +7,22 @@ export default function Home(props) {
     <div className="home">
     <div className="Box">
       <div className="EventBox">
-        <page>Coming Events</page>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <div onClick={() => props.setPage('Events')}>Learn More</div>
+        <page className = "Header">Coming Events</page>
+        <div className = "line"></div>
+        <div className = "Button" onClick={() => props.setPage('Events')}>Learn More</div>
       </div>
 
       <div className="EventBox">
-        <page>Parks</page>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <div onClick={() => props.setPage('Parks')}>Learn More</div>
+        <page className = "Header">Parks</page>
+        <div className = "line"></div>
+        <div className = "Button" onClick={() => props.setPage('Parks')}>Learn More</div>
       </div>
     </div>
     <div className="ServicesBox">
-      <page>Services</page>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div onClick={() => props.setPage('Services')}>Learn More</div>
+      <page className = "Header">Services</page>
+      <div className = "line"></div>
+      <div className = "Button" onClick={() => props.setPage('Services')}>Learn More</div>
     </div>
   </div>
-
-    
   )
 }
