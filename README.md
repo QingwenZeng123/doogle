@@ -1,5 +1,7 @@
 # Doogle
 
+By: David Huang, Maika Tran, Qingwen Zeng, Kevin Perez
+
 # What is Doogle?
 
 Our Web Appplication will allow dog lovers to explore and enjoy their surroundings with their dogs.
