@@ -17,8 +17,8 @@ export default function Nav({ setPage }) {
           <button className="topnav-style" onClick={() => setPage("Events")}>
             Events
           </button>
-          <button className="topnav-style" onClick={() => setPage("Services")}>
-            Services
+          <button className="topnav-style" onClick={() => setPage("Shops")}>
+            Shops
           </button>
           <button className="topnav-style" onClick={() => setPage("Contact")}>
             Contact

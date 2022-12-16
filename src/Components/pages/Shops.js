@@ -1,10 +1,5 @@
-import React from 'react'
-import "./shops.css"
+import React from "react";
 
 export default function Shops() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div>Shops</div>;
 }

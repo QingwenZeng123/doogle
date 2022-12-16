@@ -1,10 +1,10 @@
 import React from "react";
 // import HomeBG from "../background/HomeBG";
 import HomeBG from "../background/HomeBG.webp";
-import ContactBG from "../background/contactBG.webp";
-import EventsBG from "../background/eventsBG.webp";
-import ServicesBG from "../background/ServicesBG.jpg";
-import ParksBG from "../background/parksBG.jpg";
+import ContactBG from "../background/ContactBG.webp";
+import EventsBG from "../background/EventsBG.webp";
+import ShopsBG from "../background/ShopsBG.jpg";
+import ParksBG from "../background/ParksBG.jpg";
 // import Feedback from "../pages/Feedback.js";
 
 const HeaderList = {
@@ -23,10 +23,10 @@ const HeaderList = {
     img: <img className="Background-style" src={EventsBG} alt="EventsBG" />,
     title: <h1>Events</h1>,
   },
-  Services: {
-    name: "Services",
-    img: <img className="Background-style" src={ServicesBG} alt="ServicesBG" />,
-    title: <h1>Services</h1>,
+  Shops: {
+    name: "Shops",
+    img: <img className="Background-style" src={ShopsBG} alt="ShopsBG" />,
+    title: <h1>Shops</h1>,
   },
   Parks: {
     name: "Parks",

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Parks from "./pages/ParksPlaceholder/Parks";
 import Events from "./pages/Events";
 import Contact from "./pages/Contact";
-import Services from "./pages/Services";
+import Shops from "./pages/Shops";
 import Footer from "./Footer";
 import Header from "./Header";
 import { SignIn, SignOut, useAuthentication } from "../services/authService";
@@ -24,8 +24,8 @@ function App() {
           <Parks />
         ) : page === "Events" ? (
           <Events />
-        ) : page === "Services" ? (
-          <Services />
+        ) : page === "Shops" ? (
+          <Shops />
         ) : page === "Contact" ? (
           <Contact />
         ) : (

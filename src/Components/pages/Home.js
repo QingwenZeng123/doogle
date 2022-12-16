@@ -25,14 +25,11 @@ export default function Home(props) {
         </div>
       </div>
 
-      <div className="Box-container-Services">
-        <div className="ServicesBox">
-          <div className="Box-header">Services</div>
+      <div className="Box-container-Shops">
+        <div className="ShopsBox">
+          <div className="Box-header">Shops</div>
           <div className="line"></div>
-          <button
-            className="Learn-more"
-            onClick={() => props.setPage("Services")}
-          >
+          <button className="Learn-more" onClick={() => props.setPage("Shops")}>
             Learn More
           </button>
         </div>
