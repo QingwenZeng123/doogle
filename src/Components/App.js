@@ -1,14 +1,13 @@
-import Home from "./pages/Home";
-/* import Nav from "./Nav"; */
+import Home from "./Pages/Home";
 import Nav from "./Nav.js";
 import { useState } from "react";
-import Parks from "./pages/ParksPlaceholder/Parks";
-import Events from "./pages/Events";
-import Contact from "./pages/Contact";
-import Services from "./pages/Services";
+import Parks from "./Pages/ParksPlaceholder/Parks";
+import Events from "./Pages/Events";
+import Contact from "./Pages/Contact";
+import Services from "./Pages/Services";
 import Footer from "./Footer";
 import Header from "./Header";
-// import { SignIn, SignOut, useAuthentication } from "./services/authService";
+import { SignIn, SignOut, useAuthentication } from "../services/authService";
 
 function App() {
   const [page, setPage] = useState("Home");
@@ -18,9 +17,7 @@ function App() {
     <div className="App">
       <div className="Page-container">
         <Nav setPage={setPage} />
-        {/* {!user ? <SignIn /> : <SignOut />} */}
         <Header headname={page} />
-        {/* <h1>{page}</h1> */}
         {page === "Home" ? (
           <Home setPage={setPage} />
         ) : page === "Parks" ? (

@@ -1,9 +1,9 @@
 import React from "react";
-import HomeBG from "../background/homeBG.webp";
-import ContactBG from "../background/contactBG.webp";
-import EventsBG from "../background/eventsBG.webp";
-import ServicesBG from "../background/servicesBG.jpg";
-import ParksBG from "../background/parksBG.jpg";
+import HomeBG from "../background/HomeBG.webp";
+import ContactBG from "../background/ContactBG.webp";
+import EventsBG from "../background/EventsBG.webp";
+import ServicesBG from "../background/ServicesBG.jpg";
+import ParksBG from "../background/ParksBG.jpg";
 // import Feedback from "../pages/Feedback.js";
 
 const HeaderList = {
