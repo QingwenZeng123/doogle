@@ -1,18 +1,18 @@
-.Button{
-    background-color: rgb(212, 126, 13);
-    overflow: hidden;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    width: 30%;
-    align-self: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.Button {
+  background-color: rgb(212, 126, 13);
+  overflow: hidden;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 30%;
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .Button div:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }

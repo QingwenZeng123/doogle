@@ -1,0 +1,265 @@
+.App {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: sans-serif;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.Page-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================== Header ===================== */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./background/repeatedBG.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  opacity: 0.6;
+}
+
+.Background-style {
+  width: 80vw;
+  height: 80vh;
+  border-radius: 50%;
+}
+
+/* .Header-outline {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 45vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ */
+/* User Header Image */
+.header-img {
+  height: 30px;
+  border-radius: 10%;
+  vertical-align: -5px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.secondnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.secondnav b {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Style the links inside the navigation bar */
+.secondnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.secondnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.secondnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.Nav {
+  width: 100%;
+  height: 50px;
+  background-color: antiquewhite;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* ===================== Contact Page ===================== */
+.contact-container {
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #999;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  row-gap: 20px;
+}
+
+form p {
+  margin-top: -20px;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  row-gap: 10px;
+}
+
+.input-field {
+  width: 450px;
+  height: 40px;
+  border: 1px solif #777;
+  outline: none;
+}
+
+.textarea-field {
+  height: 150px;
+  padding-top: 10px;
+}
+
+.submit {
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 18px;
+  padding: 10px;
+  background-color: #47c35a;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+/* ===================== Footer ===================== */
+.main-footer {
+  color: white;
+  background-color: #282c34;
+  padding-top: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: small;
+}
+
+.list-styled {
+  list-style-type: none;
+}
+
+.col {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+}
+
+.EventBox {
+  /* style */
+  border: solid;
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  /*background-color: lightblue;*/
+  height: 80%;
+  width: 30%;
+}
+
+.Box {
+  display: flex;
+  flex-direction: row;
+  /*background-color: gray;*/
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50%;
+}
+
+.ServicesBox {
+  border: solid;
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  /*background-color: lightcoral;*/
+  height: 20%;
+  width: 50%;
+  flex-grow: 1;
+}
+
+.Header {
+  border-bottom: solid;
+  height: 30%;
+  font-family: "serif";
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: lightpink;*/
+  width: 80%;
+  align-self: center;
+  height: 400px;
+}

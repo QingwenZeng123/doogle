@@ -36,7 +36,7 @@ const Footer = () => {
         <hr />
         <div className="row">
           <p className="col-sm">
-            &copy;2022 doogle | All right reserved | Terms of Service | Privacy
+            &copy;2022 Doogle | All right reserved | Terms of Service | Privacy
           </p>
         </div>
       </div>
