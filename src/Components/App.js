@@ -1,10 +1,10 @@
-import Home from "./Pages/Home";
+import Home from "../Components/pages/Home";
 import Nav from "./Nav.js";
 import { useState } from "react";
-import Parks from "./Pages/ParksPlaceholder/Parks";
-import Events from "./Pages/Events";
-import Contact from "./Pages/Contact";
-import Services from "./Pages/Services";
+import Parks from "./pages/ParksPlaceholder/Parks";
+import Events from "./pages/Events";
+import Contact from "./pages/Contact";
+import Services from "./pages/Services";
 import Footer from "./Footer";
 import Header from "./Header";
 import { SignIn, SignOut, useAuthentication } from "../services/authService";
