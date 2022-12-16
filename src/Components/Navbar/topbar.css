@@ -20,20 +20,20 @@
 }
 
 .web-name {
-  color: skyblue;
+  color: black;
   font-size: 2vw;
   font-style: normal;
 }
 
 .topnav-style {
-  color: skyblue;
+  color: black;
   background-color: rgb(210, 169, 94);
   font-size: 2vw;
   transition: ease 0.3s;
 }
 
-.top-style:hover {
-  background-color: #ddd;
+.topnav-style:hover {
+  background-color: skyblue;
   color: black;
   cursor: pointer;
 }
