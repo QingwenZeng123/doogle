@@ -5,7 +5,7 @@ import { collection, addDoc, Timestamp } from "firebase/firestore";
 
 export async function createContact({ name, email, message, subject }) {
   const data = { name, email, message, subject, date: Timestamp.now() };
-  const docRef = await addDoc(collection(db, "contact"), data);
+  const docRef = await addDoc(collection(db, "contactUs"), data);
   return { id: docRef.id, ...data };
 }
 

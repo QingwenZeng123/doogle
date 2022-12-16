@@ -1,4 +1,4 @@
-# Doogle
+# Doogle 🐕
 
 By: David Huang, Maika Tran, Qingwen Zeng, Kevin Perez
 
@@ -9,3 +9,5 @@ User will be able to explore different tabs, with each page either giving them t
 User are able to save and favorite items that they enjoy and may want to see later.
 
 > > Work In Progress
+
+Link: _TBD_
