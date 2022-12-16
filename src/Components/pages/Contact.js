@@ -9,7 +9,7 @@ export async function createContact({ name, email, message, subject }) {
   return { id: docRef.id, ...data };
 }
 
-export default function ConatctEntry({ addContact }) {
+export default function ContactEntry({ addContact }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
