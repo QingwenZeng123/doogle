@@ -12,26 +12,17 @@ import {
 import PlaceDetails from "../PlaceDetails/PlaceDetails";
 import useStyles from "./styles.js";
 
-export default function List() {
+export default function List({ places, childClick }) {
   const classes = useStyles();
   const [type, setType] = useState("restaurants");
   const [rating, setRating] = useState("");
 
-  const places = [
-    { name: "Cool Place" },
-    { name: "best beer" },
-    { name: "Best Place" },
-    { name: "Cool Place" },
-    { name: "best beer" },
-    { name: "Best Place" },
-    { name: "Cool Place" },
-    { name: "best beer" },
-    { name: "Best Place" },
-  ];
+  console.log({ childClick });
+
   return (
     <div className="classes.container">
       <Typography variant="h4">
-        Restaurant, Hotels & Attractions aroung you
+        Should Be Parks Instead of Restaunrant
       </Typography>
       <FormControl className={classes.formcontrol}>
         <InputLabel>Type</InputLabel>
