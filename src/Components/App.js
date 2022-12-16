@@ -1,5 +1,6 @@
 import Home from "./pages/Home";
-import Nav from "./Navbar/Nav";
+/* import Nav from "./Nav"; */
+import Nav from "./Nav.js";
 import { useState } from "react";
 import Parks from "./pages/ParksPlaceholder/Parks";
 import Events from "./pages/Events";
@@ -11,11 +12,13 @@ import Header from "./Header";
 
 function App() {
   const [page, setPage] = useState("Home");
+  /*   const user = useAuthentication(); */
 
   return (
     <div className="App">
       <div className="Page-container">
         <Nav setPage={setPage} />
+        {/* {!user ? <SignIn /> : <SignOut />} */}
         <Header headname={page} />
         {/* <h1>{page}</h1> */}
         {page === "Home" ? (
