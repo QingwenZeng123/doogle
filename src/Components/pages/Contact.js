@@ -23,6 +23,7 @@ export default function ContactEntry({ addContact }) {
       setError("All information must be included");
     } else {
       addContact({ name, email, message, subject });
+      addDoc(collection(db, "contactUs"), name, email, message, subject);
     }
   }
 
