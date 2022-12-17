@@ -47,7 +47,7 @@
   color: black;
   background-color: rgb(210, 169, 94);
   font-size: 1.5vw;
-  transition: ease 0.3s;
+  transition: ease 0.1s;
   padding-left: 0.5em;
   padding-right: 0.7em;
   border-style: none;
@@ -213,7 +213,7 @@ ul {
   height: 30vh;
 }
 
-.Box-container-Services {
+.Box-container-Shops {
   padding-top: 1em;
   padding-bottom: 0.5em;
   display: flex;
@@ -225,7 +225,7 @@ ul {
 
 .EventsBox,
 .ParksBox,
-.ServicesBox {
+.ShopsBox {
   width: 30vw;
   height: 30vh;
   border: solid;
@@ -265,6 +265,33 @@ ul {
   background-color: #ddd;
   color: black;
   cursor: pointer;
+}
+
+/*=====================Events=================================*/
+.Box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 130vh;
+}
+
+.Box-container-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.EventsBox-Events-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 30vh;
+  background-color: lightcoral;
 }
 /* .ServicesBox {
   padding: 1em;
