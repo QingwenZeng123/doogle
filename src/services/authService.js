@@ -23,7 +23,7 @@ export function SignOut() {
         src={auth.currentUser.photoURL}
         placeholder="profile image"
         alt="profile"
-      />{" "}
+      />
       &nbsp;
       <button className="auth__button" onClick={() => signOut(auth)}>
         Sign Out

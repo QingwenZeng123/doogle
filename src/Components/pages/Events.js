@@ -7,7 +7,7 @@ export default function Events(props) {
     <div className="Box-container">
       <div className="Box-container-row">
         <div className="EventsBox-Events-page">
-          <h1>Christmas</h1>
+          <h1>Merry Christmas</h1>
           <h1>Date</h1>
         </div>
         <div className="EventsBox-Events-page">
