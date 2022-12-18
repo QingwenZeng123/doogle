@@ -24,4 +24,7 @@ List of technologies:
 - React packages (the install lists above)
 - Travel Advisor API
 
-Link: _TBD_
+Credit:
+
+- Huge credit toward [JavaScript Mastery]{https://youtube.com/watch?v=UKdQjQX1Pko&si=EnSIkaIECMiOmarE}
+  Link: _TBD_
