@@ -8,17 +8,20 @@ export default makeStyles(() => ({
     justifyContent: "center",
     width: "100px",
   },
+
   mapContainer: {
     height: "85vh",
     width: "100%",
     backgroundColor: "green",
   },
+
   markerContainer: {
     position: "absolute",
     transform: "translate(-50%, -50%)",
     zIndex: 1,
     "&:hover": { zIndex: 2 },
   },
+
   pointer: {
     cursor: "pointer",
   },

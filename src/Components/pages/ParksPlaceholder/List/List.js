@@ -1,53 +1,77 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, createRef } from "react";
 import {
   CircularProgress,
-  Grid,
-  Typography,
   InputLabel,
   MenuItem,
   FormControl,
   Select,
 } from "@material-ui/core";
-
 import PlaceDetails from "../PlaceDetails/PlaceDetails";
 import useStyles from "./styles.js";
 
-export default function List({ places, childClick }) {
+export default function List({
+  places,
+  childClick,
+  isLoading,
+  rating,
+  setRating,
+}) {
   const classes = useStyles();
-  const [type, setType] = useState("restaurants");
-  const [rating, setRating] = useState("");
+  const [elementRefs, setElementRefs] = useState([]);
 
-  console.log({ childClick });
+  // Give reference to each location, so when you click on the card from the map, then it will know which park it refers to
+  useEffect(() => {
+    setElementRefs((refs) =>
+      Array(places?.length)
+        .fill()
+        .map((_, i) => refs[i] || createRef())
+    );
+    console.log("LIST > places", places);
+  }, [places]);
 
   return (
-    <div className="classes.container">
-      <Typography variant="h4">
-        Should Be Parks Instead of Restaunrant
-      </Typography>
-      <FormControl className={classes.formcontrol}>
-        <InputLabel>Type</InputLabel>
-        <Select value={type} onChange={(e) => setType(e.target.value)}>
-          <MenuItem value="restaurants">Restaurant</MenuItem>
-          <MenuItem value="hotels">Hotels</MenuItem>
-          <MenuItem value="attractions">Attractions</MenuItem>
-        </Select>
-      </FormControl>
-      <FormControl className={classes.formcontrol}>
-        <InputLabel>Rating</InputLabel>
-        <Select value={rating} onChange={(e) => setRating(e.target.value)}>
-          <MenuItem value="0">All</MenuItem>
-          <MenuItem value="3">Above 3.0</MenuItem>
-          <MenuItem value="4">Above 4.0</MenuItem>
-          <MenuItem value="4.5">Above 4.5</MenuItem>
-        </Select>
-      </FormControl>
-      <Grid container spacing={3} className={classes.list}>
-        {places?.map((place, i) => (
-          <Grid item key={i} xs={12}>
-            <PlaceDetails place={place} />
-          </Grid>
-        ))}
-      </Grid>
+    <div className="lists__holder">
+      <h2>Attractions Parks For Your Pets</h2>
+      {isLoading ? (
+        <div className={classes.loading}>
+          <CircularProgress size="5rem" />
+        </div>
+      ) : (
+        <>
+          <FormControl className={classes.formControl}>
+            <InputLabel id="rating">Rating</InputLabel>
+            <Select
+              id="rating"
+              value={rating}
+              onChange={(e) => setRating(e.target.value)}
+            >
+              <MenuItem value="">All</MenuItem>
+              <MenuItem value="3">Above 3.0</MenuItem>
+              <MenuItem value="4">Above 4.0</MenuItem>
+              <MenuItem value="4.5">Above 4.5</MenuItem>
+            </Select>
+          </FormControl>
+          <div className="list__container">
+            {!places ? (
+              <p>
+                There is no attraction park at this location or the Travel
+                Advisor API broke `I'm really sad`. Places might not appear, but
+                I believe Autocomplete works - Maika
+              </p>
+            ) : (
+              places?.map((place, i) => (
+                <div>
+                  <PlaceDetails
+                    selected={Number(childClick) === i}
+                    refProp={elementRefs[i]}
+                    place={place}
+                  />
+                </div>
+              ))
+            )}
+          </div>
+        </>
+      )}
     </div>
   );
 }

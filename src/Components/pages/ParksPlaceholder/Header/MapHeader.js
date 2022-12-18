@@ -1,33 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Autocomplete } from "@react-google-maps/api";
-import { AppBar, Toolbar, Typography, InputBase, Box } from "@material-ui/core";
-import SearchIcon from "@material-ui/icons/Search";
-import useStyles from "./styles";
-export default function MapHeader() {
-  const classes = useStyles();
+
+export default function MapHeader({ setCoordinate }) {
+  const [autocomplete, setAutocomplete] = useState(null);
+  const onLoad = (autoC) => setAutocomplete(autoC);
+  const onPlaceChanged = () => {
+    const lat = autocomplete.getPlace().geometry.location.lat();
+    const lng = autocomplete.getPlace().geometry.location.lng();
+    setCoordinate({ lat, lng });
+  };
+
   return (
-    <AppBar position="static">
-      <Toolbar className={classes.toolbar}>
-        <Typography variant="h5" className={classes.title}>
-          Parks
-        </Typography>
-        <Box display="flex">
-          <Typography variant="h6" className={classes.title}>
-            Explore New Places
-          </Typography>
-          {/* <Autocomplete> */}
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
+    <div className="map__header">
+      <div className="map__header-container">
+        <h2>Attractions Parks</h2>
+        <div className="search__bar-container">
+          <h3 className="search__bar-title">Explore New Places</h3>
+          <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
+            <div className="search__bar-search">
+              <input
+                type="text"
+                placeholder="Search..."
+                className="search_bar-input"
+              />
             </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{ root: classes.inputRoot, input: classes.inputInput }}
-            />
-          </div>
-          {/* </Autocomplete> */}
-        </Box>
-      </Toolbar>
-    </AppBar>
+          </Autocomplete>
+        </div>
+      </div>
+    </div>
   );
 }

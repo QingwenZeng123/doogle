@@ -1,10 +1,8 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
-import { Paper, Typography, useMediaQuery } from "@material-ui/core";
+import { Paper, useMediaQuery } from "@material-ui/core";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import Rating from "@material-ui/lab/Rating";
-
-import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import useStyles from "./styles";
 
 export default function Map({
@@ -16,27 +14,23 @@ export default function Map({
 }) {
   const classes = useStyles();
   const isDesktop = useMediaQuery("(min-width:600px)");
-  const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyCn60PwOjrPgnFMG46T0my1tO6aVXPBvhg",
-  });
 
-  if (!isLoaded) {
-    return <div>Loading...</div>;
-  }
   return (
-    <div className={classes.mapContainer}>
+    <div className="map__container">
       <GoogleMapReact
         bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
         defaultCenter={coordinate}
         center={coordinate}
         defaultZoom={14}
-        margin={[50, 50, 50, 50]}
-        //   options={{ disableDefaultUI: true, zoomControl: true, styles: mapStyles }}
-        option={""}
         onChange={(e) => {
-          console.log("MAP > e", e);
           setCoordinate({ lat: e.center.lat, lng: e.center.lng });
           setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw });
+          console.log("MAP > coordinates", { coordinate });
+          console.log(
+            "MAP > marginBounds",
+            e.marginBounds.ne,
+            e.marginBounds.sw
+          );
         }}
         onChildClick={(child) => setChildClick(child)}
       >
@@ -51,14 +45,7 @@ export default function Map({
               <LocationOnOutlinedIcon color="primary" font-size="large" />
             ) : (
               <Paper elevation={3} className={classes.paper}>
-                <Typography
-                  className={classes.typography}
-                  variant="subtitle2"
-                  gutterBottom
-                >
-                  {" "}
-                  {place.name}
-                </Typography>
+                <h3> {place.name}</h3>
                 <img
                   className={classes.pointer}
                   src={
