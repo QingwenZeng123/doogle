@@ -5,12 +5,7 @@ function Header(props, { setSubpage }) {
   const headname = props.headname;
   console.log(headname);
 
-  return (
-    <div className="header-container">
-      {HeaderList[headname].title}
-      {HeaderList[headname].img}
-    </div>
-  );
+  return <div className="header-container">{HeaderList[headname].img}</div>;
 }
 
 export default Header;

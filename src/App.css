@@ -37,9 +37,10 @@
 }
 
 .web-name {
-  color: black;
-  font-size: 2vw;
+  color: skyblue;
+  font-size: 3vw;
   font-style: normal;
+  font-family: "Rubik Gemstones", cursive;
   padding-left: 0.5em;
 }
 
@@ -47,6 +48,7 @@
   color: black;
   background-color: rgb(210, 169, 94);
   font-size: 1.5vw;
+  font-family: "Rubik Gemstones", cursive;
   transition: ease 0.1s;
   padding-left: 0.5em;
   padding-right: 0.7em;
@@ -93,18 +95,16 @@
 /* ===================== Header ===================== */
 .header-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  background-image: url("./background/repeatedBG.jpg");
-  background-size: contain;
-  background-repeat: repeat;
-  opacity: 0.6;
+  background-color: lightyellow;
+  opacity: 0.9;
 }
 
 .Background-style {
-  width: 80vw;
-  height: 80vh;
-  border-radius: 50%;
+  width: 100vw;
+  height: 70vh;
 }
 
 /* ===================== Contact Page ===================== */
