@@ -15,28 +15,28 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col">
+          {/* <div className="col">
             <h4>Feedback</h4>
             <ul className="list-styled">
               <li>111-111-1111</li>
               <li>feedbackdoogle@gmail.com</li>
               <li>webLink *TBD*</li>
             </ul>
-          </div>
+          </div> */}
 
-          <div className="col">
+          {/* <div className="col">
             <h4>Media</h4>
             <ul className="list-styled">
               <li>Instagram</li>
               <li>Twitter</li>
               <li>Facebook</li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <hr />
         <div className="row">
           <p className="col-sm">
-            &copy;2022 Doogle | All right reserved | Terms of Service | Privacy
+            &copy;2022 Doogle | 2022 LMU Computer Science - WebApp Development
           </p>
         </div>
       </div>

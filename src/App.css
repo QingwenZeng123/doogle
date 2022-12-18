@@ -4,7 +4,7 @@
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: sans-serif;
+  font-family: "COPPERPLATE";
 }
 
 /*page-container including all the components except footer*/
@@ -157,8 +157,8 @@ form p {
   color: #fff;
   margin-top: 18px;
   padding: 10px;
-  background-color: #47c35a;
-  font-size: 12px;
+  background-color: #e9c40d;
+  font-size: 15px;
   border: none;
   cursor: pointer;
 }
