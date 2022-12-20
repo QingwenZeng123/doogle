@@ -23,7 +23,7 @@
 }
 
 .home__container,
-.events-container {
+.events__container {
   row-gap: 20px;
   padding: 20px 0;
 }
