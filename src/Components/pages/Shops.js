@@ -11,7 +11,7 @@ export default function Shops() {
       </div>
       <div className="stores-container">
         <div className="store">
-          <img src={Petco} />
+          <img src={Petco} alt="Petco" />
           <a
             href="https://www.petco.com/shop/en/petcostore"
             className="store-link"
@@ -20,14 +20,14 @@ export default function Shops() {
           </a>
         </div>
         <div className="store">
-          <img src={Petsmart} />
+          <img src={Petsmart} alt="Petsmart" />
           <a href="https://www.petsmart.com/" className="store-link">
             {" "}
             Visit PetSmart Website{" "}
           </a>
         </div>
         <div className="store">
-          <img src={Chewy} />
+          <img src={Chewy} alt="Chewy" />
           <a href="http://www.chewy.com/" className="store-link">
             {" "}
             Visit Chewy Website{" "}

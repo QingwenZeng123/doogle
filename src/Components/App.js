@@ -7,7 +7,6 @@ import Contact from "./pages/Contact";
 import Shops from "./pages/Shops";
 import Footer from "./Footer";
 import Header from "./Header";
-import { SignIn, SignOut, useAuthentication } from "../services/authService";
 
 function App() {
   const [page, setPage] = useState("Home");
