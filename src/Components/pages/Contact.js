@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { createContact } from "../../services/contactService";
+import { useAuthentication } from "../../services/authService";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -8,12 +9,15 @@ export default function Contact() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState(null);
+  const user = useAuthentication();
 
   function submit(e) {
     setError(null);
     e.preventDefault();
     if (!name.trim() || !email.trim() || !subject.trim() || !message.trim()) {
       setError("***All information must be provided***");
+    } else if (!user) {
+      setError("Sign in to submit contact form");
     } else {
       createContact({ name, email, subject, message });
       setName("");
