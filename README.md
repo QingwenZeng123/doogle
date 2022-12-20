@@ -26,7 +26,7 @@ List of technologies:
 
 Credit:
 
-- Huge credit toward [JavaScript Mastery]{"https://youtube.com/watch?v=UKdQjQX1Pko&si=EnSIkaIECMiOmarE"}
+- Huge credit toward [JavaScript Mastery]("https://youtube.com/watch?v=UKdQjQX1Pko&si=EnSIkaIECMiOmarE")
 
 # Job
 
