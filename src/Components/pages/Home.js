@@ -1,7 +1,7 @@
 import React from "react";
-import dogevents from "../../background/dogevents.jpeg";
-import dogparks from "../../background/dogparks.jpg";
-import dogshops from "../../background/dogshops.jpg";
+import dogevents from "../../images/dogevents.jpeg";
+import dogparks from "../../images/dogparks.jpg";
+import dogshops from "../../images/dogshops.jpg";
 
 export default function Home(props) {
   console.log(props);

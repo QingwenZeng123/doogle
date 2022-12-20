@@ -1,4 +1,4 @@
-import Home from "../Components/pages/Home";
+import Home from "./pages/Home";
 import Nav from "./Nav.js";
 import { useState } from "react";
 import Parks from "./pages/ParksPlaceholder/Parks";
