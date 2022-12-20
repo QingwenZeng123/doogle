@@ -29,5 +29,3 @@ export default function Nav({ setPage }) {
     </div>
   );
 }
-
-/*park, local breeder in services*/

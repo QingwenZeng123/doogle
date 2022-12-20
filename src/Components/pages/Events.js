@@ -4,8 +4,8 @@ export default function Events(props) {
   console.log(props);
 
   return (
-    <div className="events-container flex">
-      <div className="Box-container-row">
+    <div className="events__container flex">
+      <div className="events__container-row">
         <div className="event__information flex">
           <h1 className="events__text">Cool Tricks w/ Susan Light</h1>
           <h1 className="events__text">Los Angeles</h1>
@@ -21,7 +21,7 @@ export default function Events(props) {
           </h1>
         </div>
       </div>
-      <div className="Box-container-row">
+      <div className="events__container-row">
         <div className="event__information flex">
           <h1 className="events__text">SNPLA Pet Vaccine Clinic</h1>
           <h1 className="events__text">Los Angeles</h1>
@@ -33,7 +33,7 @@ export default function Events(props) {
           <h1 className="events__text">Every Tuesday | 5:00 PM – 7:00 PM</h1>
         </div>
       </div>
-      <div className="Box-container-row">
+      <div className="events__container-row">
         <div className="event__information flex">
           <h1 className="events__text">Online Pet Programming for Kids</h1>
           <h1 className="events__text">Virtual</h1>

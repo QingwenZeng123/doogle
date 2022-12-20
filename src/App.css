@@ -253,12 +253,12 @@
 }
 
 /* ===================== Events Page ===================== */
-.events-container {
+.events__container {
   justify-content: center;
   width: 100vw;
 }
 
-.Box-container-row {
+.events__container-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
