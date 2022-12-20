@@ -33,4 +33,5 @@ Credit:
 - Kevin Perez : Firebase and Contact Page Database 
 - Maika Tran : Park and Contact Page
 - Qingwen Zeng : Header, Footer, Shop Authentication, Responsiveness
+
 Link: https://doogle-bf5d0.web.app
