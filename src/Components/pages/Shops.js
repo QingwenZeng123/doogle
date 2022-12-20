@@ -5,7 +5,7 @@ import Petsmart from "../../background/petsmart.jpg";
 
 export default function Shops() {
   return (
-    <div className="store-list">
+    <div className="store-list flex">
       <div className="store-header">
         <h1>Popular dog shops in US</h1>
       </div>

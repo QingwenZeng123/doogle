@@ -13,7 +13,7 @@ function App() {
   const [page, setPage] = useState("Home");
   return (
     <div className="App">
-      <div className="Page-container">
+      <div className="page__container">
         <Nav setPage={setPage} />
         <Header headname={page} />
         {page === "Home" ? (

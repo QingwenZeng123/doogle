@@ -8,12 +8,25 @@
 }
 
 /*page-container including all the components except footer*/
-.Page-container {
+.page__container {
   flex: 1;
   display: flex;
   flex-direction: column;
+  background-color: lightyellow;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.home__container,
+.events-container {
+  row-gap: 20px;
+  padding: 20px 0;
+}
 /*===============Nav================*/
 .topnav {
   background-color: rgb(210, 169, 94);
@@ -98,7 +111,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-color: lightyellow;
   opacity: 0.9;
 }
 
@@ -108,64 +120,41 @@
 }
 
 /* ===================== Home Page ===================== */
-.Home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: lightyellow;
+.home__container {
   width: 100vw;
-  height: 80vh;
-  align-self: center;
-}
-
-.Box-container-Event-Parks {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 70vw;
-  height: 30vh;
-}
-
-.Box-container-Shops {
-  padding-top: 1em;
-  padding-bottom: 0.5em;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  width: 70vw;
+}
+
+.box__container-event-parks,
+.box__container-shops {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  width: 100%;
   height: 30vh;
 }
 
-.EventsBox,
-.ParksBox,
-.ShopsBox {
+.box__container {
   width: 30vw;
   height: 30vh;
-  border: solid;
-  border-width: 2px;
-  display: flex;
-  flex-direction: column;
   background-color: rgb(210, 169, 94);
-  align-items: center;
+  border: 2px solid;
   justify-content: space-around;
 }
 
-.Box-header {
+.box__header {
   height: 30%;
-  font-family: "COPPERPLATE";
   margin-top: 10px;
   font-size: 20px;
-  margin-bottom: 10px;
+  padding: 10px;
 }
 
-.Learn-more {
+.learn__more {
   background-color: rgb(212, 126, 13);
   transition: ease 0.3s;
 }
 
-.Learn-more:hover {
+.learn__more:hover {
   background-color: #ddd;
   color: black;
   cursor: pointer;
@@ -235,7 +224,7 @@
   border-radius: 5px;
 }
 
-.map__card::hover {
+.map__card:hover {
   z-index: 2;
   cursor: pointer;
 }
@@ -264,14 +253,9 @@
 }
 
 /* ===================== Events Page ===================== */
-.Box-container {
-  background-color: lightyellow;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+.events-container {
+  justify-content: center;
   width: 100vw;
-  height: 130vh;
 }
 
 .Box-container-row {
@@ -281,30 +265,23 @@
   width: 70vw;
 }
 
-.EventsBox-Events-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.event__information {
+  background-color: rgb(210, 169, 94);
   justify-content: center;
-  text-align: center;
   width: 30vw;
   height: 30vh;
-  background-color: rgb(210, 169, 94);
   padding: 10px;
 }
 
-.Events-text {
+.events__text {
   color: black;
   font-size: medium;
 }
 
 /* ===================== Stores Page ===================== */
 .store-list {
-  display: flex;
-  flex-direction: column;
   width: 100vw;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .store-header {
@@ -317,8 +294,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  border: 1px solid green;
+  column-gap: 10px;
+  width: 100%;
+  padding: 30px;
 }
 
 .store {
@@ -352,7 +330,6 @@
 
 /* ===================== Contact Page ===================== */
 .contact-container {
-  background-color: #fff;
   box-shadow: 0 0 20px 0 #999;
   display: flex;
   justify-content: center;
@@ -361,7 +338,6 @@
 form {
   margin: 20px;
   padding: 20px;
-  border: 1px solid black;
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -378,7 +354,6 @@ form p {
 .input-container {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
   row-gap: 10px;
 }
 
@@ -435,6 +410,7 @@ form p {
 
   .stores-container {
     flex-direction: column;
+    row-gap: 20px;
     width: 100vw;
   }
   .store {
