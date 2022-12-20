@@ -26,13 +26,13 @@ List of technologies:
 
 Credit:
 
-- Huge credit toward [JavaScript Mastery]{https://youtube.com/watch?v=UKdQjQX1Pko&si=EnSIkaIECMiOmarE}
+- Huge credit toward [JavaScript Mastery]("https://youtube.com/watch?v=UKdQjQX1Pko&si=EnSIkaIECMiOmarE")
 
 # Job
 
 - David Huang : HomePage design and Nav
-- Kevin Perez : Firebase and Contact Page Database
-- Maika Tran : Park and Contact Page
+- Kevin Perez : Firebase and Contact Page Database/ CSS
+- Maika Tran : Park and Contact Page, CSS
 - Qingwen Zeng : Header, Footer, Shop Authentication, Responsiveness
 
 Link: https://doogle-bf5d0.web.app

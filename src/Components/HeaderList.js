@@ -1,5 +1,4 @@
 import React from "react";
-
 import HomeBG from "../images/homeBG.jpg";
 import ContactBG from "../images/contactBG.webp";
 import EventsBG from "../images/eventsBG.webp";
