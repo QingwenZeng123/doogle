@@ -6,7 +6,7 @@ By: David Huang, Maika Tran, Qingwen Zeng, Kevin Perez
 
 Our Web Appplication will allow dog lovers to explore and enjoy their surroundings with their dogs.
 User will be able to explore different tabs, with each page either giving them the oopurtunity to try a new service, or see events happening in current time. The services include grooming and breeders. Users are also able to look for hospitality, they can find parks or hospitals and their locations, look for shops and items to purchase for their dogs.
-User are able to save and favorite items that they enjoy and may want to see later.
+User are able to save and favorite items that they enjoy and may want to see later. Our contact page saves the information of users that have any questions into our database.
 
 # Technology
 
@@ -27,10 +27,12 @@ List of technologies:
 Credit:
 
 - Huge credit toward [JavaScript Mastery]{https://youtube.com/watch?v=UKdQjQX1Pko&si=EnSIkaIECMiOmarE}
-  
+
 # Job
-- David Huang : HomePage design and Nav 
-- Kevin Perez : Firebase and Contact Page Database 
+
+- David Huang : HomePage design and Nav
+- Kevin Perez : Firebase and Contact Page Database
 - Maika Tran : Park and Contact Page
 - Qingwen Zeng : Header, Footer, Shop Authentication, Responsiveness
+
 Link: https://doogle-bf5d0.web.app

@@ -1,33 +1,24 @@
 import React from "react";
 import { useState } from "react";
-import { db } from "../../firebaseConfig";
-import { collection, addDoc, Timestamp } from "firebase/firestore";
+import { createContact } from "../../services/contactService";
 
-export async function createContact({ name, email, message, subject }) {
-  const data = { name, email, message, subject, date: Timestamp.now() };
-  const docRef = await addDoc(collection(db, "contactUs"), data);
-  return { id: docRef.id, ...data };
-}
-
-export default function ContactEntry({ addContact }) {
+export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const [error, setError] = useState(null);
 
   function submit(e) {
     setError(null);
     e.preventDefault();
-    if (!name.trim() || !email.trim() || !message.trim() || !subject.trim()) {
-      setError("All information must be included");
+    if (!name.trim() || !email.trim() || !subject.trim() || !message.trim()) {
+      setError("Information must be supplied");
     } else {
-      addContact({ name, email, message, subject });
-      addDoc(collection(db, "contactUs"), name, email, message, subject);
+      createContact({ name, email, subject, message });
     }
   }
 
-  // export default function Contact() {
   return (
     <div className="contact-container">
       <form onSubmit={submit}>
@@ -54,7 +45,7 @@ export default function ContactEntry({ addContact }) {
             className="input-field"
             placeholder="Enter your email"
             value={email}
-            onChange={(e) => setEmail(e.target.email)}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="input-container">
@@ -64,7 +55,7 @@ export default function ContactEntry({ addContact }) {
             className="input-field"
             placeholder="Enter your subject"
             value={subject}
-            onChange={(e) => setSubject(e.target.subject)}
+            onChange={(e) => setSubject(e.target.value)}
           />
         </div>
         <div className="input-container">
@@ -74,10 +65,10 @@ export default function ContactEntry({ addContact }) {
             className="input-field textarea-field"
             placeholder="Enter your message"
             value={message}
-            onChange={(e) => setMessage(e.target.message)}
+            onChange={(e) => setMessage(e.target.value)}
           />
         </div>
-        <button type="button" className="submit">
+        <button type="submit" className="submit">
           Send
         </button>
       </form>
