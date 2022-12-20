@@ -1,7 +1,7 @@
 import React from "react";
-import Chewy from "../../background/chewy.jpg";
-import Petco from "../../background/petco.jpg";
-import Petsmart from "../../background/petsmart.jpg";
+import Chewy from "../../images/chewy.jpg";
+import Petco from "../../images/petco.jpg";
+import Petsmart from "../../images/petsmart.jpg";
 
 export default function Shops() {
   return (

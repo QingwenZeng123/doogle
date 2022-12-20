@@ -4,7 +4,7 @@ import { auth } from "../firebaseConfig";
 
 export function SignIn() {
   return (
-    <div className="auth__button-container flex">
+    <div className="auth__button-container">
       <button
         className="auth__button"
         onClick={() => signInWithPopup(auth, new GoogleAuthProvider())}
@@ -17,7 +17,7 @@ export function SignIn() {
 
 export function SignOut() {
   return (
-    <div className="auth__button-container flex">
+    <div className="auth__button-container">
       <img
         className="profile__image"
         src={auth.currentUser.photoURL}
