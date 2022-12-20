@@ -31,7 +31,7 @@ Credit:
 # Job
 
 - David Huang : HomePage design and Nav
-- Kevin Perez : Firebase and Contact Page Database
+- Kevin Perez : Firebase and Contact Page Database/ CSS
 - Maika Tran : Park and Contact Page, CSS
 - Qingwen Zeng : Header, Footer, Shop Authentication, Responsiveness
 
