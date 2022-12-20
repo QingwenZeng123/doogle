@@ -27,55 +27,44 @@
   row-gap: 20px;
   padding: 30px 0;
 }
+
 /*===============Nav================*/
-.topnav {
+.nav__container {
   background-color: rgb(210, 169, 94);
-  /* overflow: hidden; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 10px;
 }
 
-.topnav-page-title-container {
+.nav__page-container {
   display: flex;
   align-items: center;
-  flex: 1;
+  justify-content: center;
+  column-gap: 10px;
 }
 
-.topnav-page-container {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  justify-content: flex-end;
-}
-
-.web-name {
-  color: black;
+.nav__web-name {
   font-size: 3vw;
-  font-style: normal;
-  padding-left: 0.5em;
 }
 
-.topnav-style {
-  color: black;
+.nav__page {
   background-color: rgb(210, 169, 94);
-  font-size: 1.5vw;
+  font-size: 2vw;
   font-family: "COPPERPLATE";
   transition: ease 0.1s;
-  padding-left: 0.5em;
-  padding-right: 0.7em;
   border-style: none;
-  border-radius: 8px;
 }
 
-.topnav-style:hover {
+.nav__page:hover {
   background-color: skyblue;
-  color: black;
   cursor: pointer;
 }
 
 /* SignIn & SignOut*/
 .auth__button-container {
+  padding: 10px 10px;
+  min-height: 2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,24 +74,24 @@
 
 .auth__button {
   background-color: orange;
-  border-style: none;
-  font-size: 1vw;
   font-family: "COPPERPLATE";
+  min-height: 2vw;
+  border-style: none;
+  font-size: 1.5vw;
   transition: ease 0.3s;
   border-radius: 25%;
 }
 
 .auth__button:hover {
   background-color: skyblue;
-  color: black;
   cursor: pointer;
 }
 
 .profile__image {
   position: relative;
-  border-radius: 50%;
   height: 2vw;
   width: 2vw;
+  border-radius: 50%;
 }
 
 /* ===================== Header ===================== */
@@ -316,19 +305,19 @@
   align-items: center;
   justify-content: center;
   column-gap: 10px;
-  width: 100%;
-  padding: 30px;
+  width: 100vw;
+  padding: 30px 0;
 }
 
 .store {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: flex-end;
+  row-gap: 5px;
 }
 
 .store img {
-  width: 30vw;
+  width: 25vw;
   height: 40vh;
 }
 
@@ -465,5 +454,13 @@ form p {
 
   .footer-row {
     font-size: 10px;
+  }
+
+  .nav__web-name {
+    font-size: 4vw;
+  }
+
+  .nav__page {
+    font-size: 2vw;
   }
 }
