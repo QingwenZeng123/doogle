@@ -11,8 +11,6 @@ import { SignIn, SignOut, useAuthentication } from "../services/authService";
 
 function App() {
   const [page, setPage] = useState("Home");
-  /*   const user = useAuthentication(); */
-
   return (
     <div className="App">
       <div className="Page-container">

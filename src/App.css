@@ -47,7 +47,7 @@
   color: black;
   background-color: rgb(210, 169, 94);
   font-size: 1.5vw;
-  font-family: "Rubik Gemstones", cursive;
+  font-family: "COPPERPLATE";
   transition: ease 0.1s;
   padding-left: 0.5em;
   padding-right: 0.7em;
@@ -107,92 +107,7 @@
   height: 70vh;
 }
 
-/* ===================== Contact Page ===================== */
-.contact-container {
-  background-color: #fff;
-  box-shadow: 0 0 20px 0 #999;
-  display: flex;
-  justify-content: center;
-}
-
-form {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid black;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
-  row-gap: 20px;
-}
-
-form p {
-  margin-top: -20px;
-  text-align: center;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: column;
-  /* border: 1px solid red; */
-  row-gap: 10px;
-}
-
-.input-field {
-  width: 450px;
-  height: 40px;
-  border: 1px solif #777;
-  outline: none;
-}
-
-.textarea-field {
-  height: 150px;
-  padding-top: 10px;
-}
-
-.submit {
-  border-radius: 20px;
-  color: #fff;
-  margin-top: 18px;
-  padding: 10px;
-  background-color: #e9c40d;
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-}
-/* ===================== Footer ===================== */
-.main-footer {
-  color: black;
-  background-color: rgb(210, 169, 94);
-  padding-top: 1em;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: small;
-}
-
-.list-styled {
-  list-style-type: none;
-}
-
-.col {
-  text-align: center;
-}
-
-ul {
-  display: flex;
-  flex-direction: column;
-  padding-inline-start: 0;
-}
-
-/*==================Home=================*/
+/* ===================== Home Page ===================== */
 .Home-container {
   display: flex;
   flex-direction: column;
@@ -239,7 +154,7 @@ ul {
 
 .Box-header {
   height: 30%;
-  font-family: "serif";
+  font-family: "COPPERPLATE";
   margin-top: 10px;
   font-size: 20px;
   margin-bottom: 10px;
@@ -256,39 +171,6 @@ ul {
   cursor: pointer;
 }
 
-/*=====================Events=================================*/
-.Box-container {
-  background-color: lightyellow;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 100vw;
-  height: 130vh;
-}
-
-.Box-container-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 70vw;
-}
-
-.EventsBox-Events-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 30vw;
-  height: 30vh;
-  background-color: rgb(210, 169, 94);
-}
-
-.Events-text {
-  color: black;
-  font-size: medium;
-}
-
 /*===================== PARKS =================================*/
 .park__container {
   display: grid;
@@ -298,17 +180,6 @@ ul {
   grid-template-columns: auto 70vw;
   row-gap: 10px;
   column-gap: 10px;
-}
-
-@media screen and (max-width: 600px) {
-  .park__container {
-    grid-template-areas:
-      "header"
-      "list"
-      "map";
-    grid-template-columns: 1fr;
-    /* grid-template-rows: 100px auto auto; */
-  }
 }
 
 /* Park Header */
@@ -392,12 +263,46 @@ ul {
   overflow: auto;
 }
 
-/*==============Shops=================*/
+/* ===================== Events Page ===================== */
+.Box-container {
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 130vh;
+}
+
+.Box-container-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.EventsBox-Events-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30vw;
+  height: 30vh;
+  background-color: rgb(210, 169, 94);
+  padding: 10px;
+}
+
+.Events-text {
+  color: black;
+  font-size: medium;
+}
+
+/* ===================== Stores Page ===================== */
 .store-list {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 50vh;
   align-items: center;
   justify-content: flex-start;
 }
@@ -406,53 +311,156 @@ ul {
   background-color: #e9c40d;
   width: 100vw;
   text-align: center;
-  color: darkred;
 }
 
 .stores-container {
   display: flex;
-  width: 100vw;
-  height: 40vh;
   align-items: center;
   justify-content: center;
+  padding: 10px;
+  border: 1px solid green;
 }
 
-.Petco {
-  background-image: url("./background/petco.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 30vw;
-  height: 39vh;
-}
-
-.PetSmart {
-  background-image: url("./background/petsmart.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 30vw;
-  height: 39vh;
-}
-
-.Chewy {
-  background-image: url("./background/chewy.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 30vw;
-  height: 39vh;
-}
-
-.Petco,
-.PetSmart,
-.Chewy {
+.store {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.shop-link {
+.store img {
+  width: 30vw;
+  height: 40vh;
+}
+
+.store-link {
+  font-size: 20px;
+}
+
+.store-header,
+.store-link:link {
   color: darkred;
+}
+
+.store-link:hover {
+  color: rgb(224, 102, 102);
+}
+
+.store-link:visited {
+  color: rgb(213, 0, 0);
+}
+
+/* ===================== Contact Page ===================== */
+.contact-container {
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #999;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  row-gap: 20px;
+}
+
+form p {
+  margin-top: -20px;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  row-gap: 10px;
+}
+
+.input-field {
+  width: 450px;
+  height: 40px;
+  border: 1px solif #777;
+  outline: none;
+}
+
+.textarea-field {
+  height: 150px;
+  padding-top: 10px;
+}
+
+.submit {
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 18px;
+  padding: 10px;
+  background-color: #e9c40d;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===================== Footer ===================== */
+.main-footer {
+  color: black;
+  background-color: rgb(210, 169, 94);
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* ===================== Responsiveness ===================== */
+@media screen and (max-width: 600px) {
+  .park__container {
+    grid-template-areas:
+      "header"
+      "list"
+      "map";
+    grid-template-columns: 1fr;
+  }
+
+  .stores-container {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .store {
+    width: 70vw;
+  }
+
+  .store img {
+    width: 70vw;
+    height: auto;
+  }
+
+  .store-link {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .store img {
+    height: 30vh;
+  }
+
+  .store-link {
+    font-size: 20px;
+  }
+
+  .footer-row {
+    font-size: 10px;
+  }
 }
