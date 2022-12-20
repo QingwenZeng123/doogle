@@ -29,5 +29,4 @@ Credit:
 - Huge credit toward [JavaScript Mastery]{https://youtube.com/watch?v=UKdQjQX1Pko&si=EnSIkaIECMiOmarE}
   
   
-  
-  Link: https://doogle-bf5d0.web.app
+Link: https://doogle-bf5d0.web.app
