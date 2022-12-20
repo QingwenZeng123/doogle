@@ -30,7 +30,7 @@
 /*===============Nav================*/
 .topnav {
   background-color: rgb(210, 169, 94);
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,18 +76,19 @@
 
 /* SignIn & SignOut*/
 .auth__button-container {
-  padding: 10px 10px;
-  min-height: 30px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .auth__button {
   background-color: orange;
   border-style: none;
-  font-size: 14px;
+  font-size: 1vw;
+  font-family: "COPPERPLATE";
   transition: ease 0.3s;
-  border-radius: 8px;
+  border-radius: 25%;
 }
 
 .auth__button:hover {
@@ -98,11 +99,9 @@
 
 .profile__image {
   position: relative;
-  right: 10px;
-  height: 30px;
-  width: 30px;
   border-radius: 50%;
-  size: 50%;
+  height: 2vw;
+  width: 2vw;
 }
 
 /* ===================== Header ===================== */
@@ -139,25 +138,32 @@
   height: 30vh;
   background-color: rgb(210, 169, 94);
   border: 2px solid;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
-.box__header {
-  height: 30%;
-  margin-top: 10px;
-  font-size: 20px;
-  padding: 10px;
+.box-header {
+  font-size: 1vw;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
 }
 
 .learn__more {
   background-color: rgb(212, 126, 13);
   transition: ease 0.3s;
+  font-size: 1vw;
+  margin-top: 0.5em;
 }
 
 .learn__more:hover {
   background-color: #ddd;
   color: black;
   cursor: pointer;
+}
+
+.home-box-images {
+  width: 20vw;
+  height: 20vh;
 }
 
 /*===================== PARKS =================================*/
@@ -275,7 +281,20 @@
 }
 
 .events__text {
-  font-size: medium;
+  font-size: min(2vw, 2vh);
+}
+
+.events-title {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 10vh;
+  background-color: #e9c40d;
+  font-size: 2vw;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: center;
+  justify-content: center;
 }
 
 /* ===================== Stores Page ===================== */

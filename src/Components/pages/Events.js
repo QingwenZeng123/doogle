@@ -5,6 +5,7 @@ export default function Events(props) {
 
   return (
     <div className="events__container flex">
+      <h1 className="events-title">Recent Events</h1>
       <div className="events__container-row">
         <div className="event__information flex">
           <h1 className="events__text">Cool Tricks w/ Susan Light</h1>
