@@ -1,5 +1,5 @@
 import React from "react";
-import HomeBG from "../background/HomeBG.jpg";
+import HomeBG from "../background/homeBG.jpg";
 import ContactBG from "../background/contactBG.webp";
 import EventsBG from "../background/eventsBG.webp";
 import ShopsBG from "../background/shopsBG.jpg";

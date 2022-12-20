@@ -13,16 +13,19 @@ export default function Contact() {
     setError(null);
     e.preventDefault();
     if (!name.trim() || !email.trim() || !subject.trim() || !message.trim()) {
-      setError("Information must be supplied");
+      setError("***All information must be provided***");
     } else {
       createContact({ name, email, subject, message });
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
     }
   }
 
   return (
     <div className="contact-container">
       <form onSubmit={submit}>
-        {error && <p className="error">{error}</p>}
         <h2>We'd Love To Hear From You</h2>
         <p>
           Whether you are concerned about features, services or locations - We
@@ -68,6 +71,8 @@ export default function Contact() {
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
+        <br />
+        {error && <p className="error">{error}</p>}
         <button type="submit" className="submit">
           Send
         </button>

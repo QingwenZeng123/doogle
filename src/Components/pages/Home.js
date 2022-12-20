@@ -10,7 +10,7 @@ export default function Home(props) {
       <div className="box__container-event-parks">
         <div className="box__container flex">
           <h4 className="box-header">Dog Friendly Events</h4>
-          <img className="home-box-images" src={dogevents} />
+          <img className="home-box-images" src={dogevents} alt="dogEvents" />
           <button
             className="learn__more"
             onClick={() => props.setPage("Events")}
@@ -21,7 +21,7 @@ export default function Home(props) {
 
         <div className="box__container flex">
           <h4 className="box-header">Parks</h4>
-          <img className="home-box-images" src={dogparks} />
+          <img className="home-box-images" src={dogparks} alt="dogParks" />
           <button
             className="learn__more"
             onClick={() => props.setPage("Parks")}
@@ -34,7 +34,7 @@ export default function Home(props) {
       <div className="box__container-shops ">
         <div className="box__container flex">
           <h4 className="box-header">Shops</h4>
-          <img className="home-box-images" src={dogshops} />
+          <img className="home-box-images" src={dogshops} alt="dogShops" />
           <button
             className="learn__more"
             onClick={() => props.setPage("Shops")}

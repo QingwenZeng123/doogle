@@ -399,6 +399,12 @@ form p {
   border: none;
   cursor: pointer;
 }
+.error {
+  background-color: rgb(201, 0, 0);
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+}
 
 /* ===================== Footer ===================== */
 .main-footer {
